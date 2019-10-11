@@ -20,24 +20,18 @@ public class Dec2Bin {
         System.out.print("Ingrese un numero positivo: ");
         int numeroDecimal = leer.nextInt();
         
-        int cociente = 0;
+        int cociente = numeroDecimal;
         int residuo  = 0;
-        
-        cociente = numeroDecimal / 2;
-        residuo = numeroDecimal % 2;
-        
+ 
         String numeroBinario = "";
         
-        while(cociente != 1)
-        {
-            numeroBinario = residuo + numeroBinario;
-            
+        do{
             residuo = cociente % 2;
             cociente = cociente / 2;
+
+            numeroBinario = residuo + numeroBinario;
             
-        }
-        
-        numeroBinario = "1" + residuo + numeroBinario;
+        }while(cociente >= 1);
         
         System.out.printf("El numero %d su valor en binario es %s%n", numeroDecimal, numeroBinario);
        
