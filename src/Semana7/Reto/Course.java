@@ -17,7 +17,7 @@ public class Course {
     private RandomAccessFile binaryCourse;
     
     /*
-    Iniciliaza el atributo File
+    Inicializa el atributo File
     */
     public Course() 
     {}

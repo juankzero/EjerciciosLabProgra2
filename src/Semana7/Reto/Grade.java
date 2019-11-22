@@ -18,7 +18,7 @@ public class Grade {
     private RandomAccessFile binaryGrade;
 
     /*
-    Iniciliza el atributo File
+    Inicializa el atributo File
     */
     public Grade() 
     {}
